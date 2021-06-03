@@ -1,0 +1,30 @@
+
+main {
+    width: 100vw;
+    display: grid;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 1em;
+    text-align: center;
+}
+
+
+.a-item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.app-title {
+    width: 100%;
+}
+
+#root {
+    width: 100vw;
+}
+
