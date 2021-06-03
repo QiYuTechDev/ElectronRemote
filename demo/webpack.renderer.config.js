@@ -18,7 +18,7 @@ module.exports = {
     module:  {
         rules,
     },
-    plugins: [...plugins, new NodePolyfillPlugin()],
+    plugins: [...plugins, new NodePolyfillPlugin({excludeAliases: ['process']})],
     resolve: {
         extensions: ['.js', '.ts', '.jsx', '.tsx', '.css'],
     },
