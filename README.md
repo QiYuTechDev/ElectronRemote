@@ -4,7 +4,16 @@ Electron Remote Demo
 
 ## step to reproduce
 
-1. `git clone https://github.com/QiYuTechDev/ElectronRemote`
-1. `cd ElectronRemote/demo`
-1. `yarn install`
-1. `yarn start`
+```bash
+# clone the source code
+git clone https://github.com/QiYuTechDev/ElectronRemote
+
+cd ElectronRemote/demo
+
+yarn install
+
+# start the demo program
+yarn start
+
+# after the demo app is up, click the `System` on the top-left corner.
+```
