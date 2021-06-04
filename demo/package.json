@@ -86,7 +86,7 @@
     "bulma": "^0.9.2",
     "copy-webpack-plugin": "^9.0.0",
     "css-loader": "^5.2.0",
-    "electron": "^13.0.1",
+    "electron": "^13.1.0",
     "electron-build-env": "^0.2.0",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "^2.20.0",
