@@ -1,4 +1,12 @@
-const CopyPlugin = require("copy-webpack-plugin");
+const nodeExternals = require('webpack-node-externals');
+
+const is_dev = require('./webpack.dev_check');
+
+let externals = {};
+// for development [exclude all node_modules]
+if (is_dev) {
+    externals = [nodeExternals()];
+}
 
 module.exports = {
     target: 'electron-main',
@@ -12,10 +20,11 @@ module.exports = {
      */
     entry: './src/index.ts',
     // Put your normal webpack index below here
-    module:  {
+    module:    {
         rules: require('./webpack.rules'),
     },
-    resolve: {
+    resolve:   {
         extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.json'],
     },
+    externals: externals,
 };
